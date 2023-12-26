@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-String userDirectory = System.getProperty('user.dir')
+/*String userDirectory = System.getProperty('user.dir')
 
 String filePath = userDirectory + '\\Apk_file\\Solodroid_E-CommerceApp Demo_3.2.0.apk'
 
 Mobile.startApplication(filePath, true)
-
+*/
 Mobile.tap(findTestObject('Footer_NavBar/Nav_Profile'), 0)
 
 Mobile.tap(findTestObject('Menu_Profile/Btn_Edit'), 0)
@@ -100,4 +100,6 @@ def messageAdrs = Mobile.getText(findTestObject('Menu_Profile/Lbl_Address'), 10)
 Mobile.verifyEqual(messageAdrs, 'Jl pondok indah')
 
 Mobile.comment(messageAdrs)
+
+Mobile.tap(findTestObject('Footer_NavBar/Nav_Recent'), 0)
 

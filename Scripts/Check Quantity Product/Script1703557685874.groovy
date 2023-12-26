@@ -16,13 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
+/*
 String userDirectory = System.getProperty('user.dir')
 
 String filePath = userDirectory + '\\Apk_file\\Solodroid_E-CommerceApp Demo_3.2.0.apk'
 
 Mobile.startApplication(filePath, true)
-
+*/
 Mobile.tap(findTestObject('Homepage/Item_Samsung'), 0)
 
 def Quantity = Mobile.getText(findTestObject('Desc_Product/Lbl_Quantity'), 10)
@@ -42,4 +42,8 @@ def Label_EmptyCart = Mobile.getText(findTestObject('Shopping_Cart/Lbl_EmptyCart
 Mobile.comment(Label_EmptyCart)
 
 Mobile.verifyEqual(Label_EmptyCart, 'Whoops, your cart is empty')
+
+Mobile.tap(findTestObject('CheckOut/Btn_back'), 0)
+
+Mobile.tap(findTestObject('Desc_Product/btn_backheader'), 0)
 
