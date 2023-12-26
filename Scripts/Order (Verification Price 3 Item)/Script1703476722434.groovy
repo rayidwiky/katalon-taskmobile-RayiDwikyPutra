@@ -17,12 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+/*
 String userDirectory = System.getProperty('user.dir')
 
 String filePath = userDirectory + '\\Apk_file\\Solodroid_E-CommerceApp Demo_3.2.0.apk'
 
 Mobile.startApplication(filePath, true)
-
+*/
 Mobile.tap(findTestObject('Homepage/Item_Samsung'), 0)
 
 Mobile.tap(findTestObject('Desc_Product/Btn_addCart'), 0)
@@ -31,7 +32,7 @@ Mobile.setText(findTestObject('Desc_Product/Edt_NmbrOrder'), '1', 0)
 
 Mobile.tap(findTestObject('Desc_Product/Btn_Add'), 0)
 
-Mobile.tap(findTestObject('Desc_Product/btn_Back'), 0)
+Mobile.tap(findTestObject('Desc_Product/btn_backheader'), 0)
 
 Mobile.tap(findTestObject('Homepage/Item_AppleWatch'), 0)
 
@@ -41,7 +42,7 @@ Mobile.setText(findTestObject('Desc_Product/Edt_NmbrOrder'), '1', 0)
 
 Mobile.tap(findTestObject('Desc_Product/Btn_Add'), 0)
 
-Mobile.tap(findTestObject('Desc_Product/btn_Back'), 0)
+Mobile.tap(findTestObject('Desc_Product/btn_backheader'), 0)
 
 Mobile.tap(findTestObject('Homepage/Item_MiniDigital'), 0)
 
@@ -51,7 +52,7 @@ Mobile.setText(findTestObject('Desc_Product/Edt_NmbrOrder'), '1', 0)
 
 Mobile.tap(findTestObject('Desc_Product/Btn_Add'), 0)
 
-Mobile.tap(findTestObject('Desc_Product/Btn_Cart'), 0)
+Mobile.tap(findTestObject('Desc_Product/btn_MyCart'), 0)
 
 /*
 //'Get displayed message on the dialog'
