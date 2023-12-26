@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>User_Profile (Verification Profile Login)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f554c102-8724-48c4-9eee-d3a4995c3675</testCaseGuid>
+   <testCaseGuid>40655dfc-ef78-4210-b7fe-25c48f52932f</testCaseGuid>
 </TestCaseEntity>

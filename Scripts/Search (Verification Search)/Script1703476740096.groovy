@@ -17,5 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.checkElement(findTestObject(null), 0)
+/*String userDirectory = System.getProperty('user.dir')
+
+String filePath = userDirectory + '\\Apk_file\\Solodroid_E-CommerceApp Demo_3.2.0.apk'
+
+Mobile.startApplication(filePath, true)
+*/
+
+Mobile.tap(findTestObject('Homepage/btn_Search'), 0)
+
+Mobile.tap(findTestObject('Homepage/edit_search'), 0)
+
+Mobile.sendKeys(findTestObject('Homepage/edit_search'), 'Samsung')
+
+Mobile.hideKeyboard()
+
+//'Get displayed message on the dialog'
+def messageitem = Mobile.getText(findTestObject('Search/item_samsung'), 10)
+Mobile.comment(messageitem)
+//'Verify if displayed message is correct'
+Mobile.verifyEqual(messageitem, 'Samsung Galaxy S10 - Black')
+
+
 
